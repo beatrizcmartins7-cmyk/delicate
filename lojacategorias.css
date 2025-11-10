@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+body{
+ background-color:#FEE6E2;
+}
+
+input[type="text"] {
+      width: 300px;
+      padding: 8px 10px 10px 40px; /* Espaço para o ícone */
+      font-size: 12px;
+      background: url('https://cdn-icons-png.flaticon.com/512/622/622669.png') no-repeat 10px center;
+      background-size: 10px 10px; /* Ajusta o tamanho do ícone */
+      background-color: #E6E6E6;
+}
+
+.pesquisa{
+  border-color: #b06566;
+  border-radius: 15px;
+  padding: 3px;
+ font-family: "Poppins", sans-serif;
+}
+
+form{
+    color: #b06566;
+}
+
+.login{
+    display: flex;
+    list-style: none;
+}
+
+.link{
+    text-decoration: none;
+    color: #b06566;
+    width: 150px;
+    margin-right: 30px;
+    font-family: "Poppins", sans-serif;
+}
+
+.cabecalho{ 
+    display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo{
+    width: 250px;
+    height: 100px;
+    margin-right: 130px;
+}
+
+.mainnav{
+    background: #b06566;
+}
+
+
+.linknav{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.categorias{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px;
+    font-size: 14px;
+    margin: 30px;
+}
+
+.linknav:hover{
+    font-size: 16px;
+    color: #f2d0d0;
+}
+h2{
+    color:#b06566 ;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin: 15px 0px 15px 0px;
+}
+.produtos{
+    display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 40px 0px 40px 0px;
+}
+.card{
+    background: #b06566;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  width: 180px;
+}
+.card img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+.card button {
+  margin-top: 10px;
+  background: #ffffff;
+  color: #b06566;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.card button:hover {
+  background: #dec2bd;
+  color: #ffffff;
+}
+
+body{
+    background-color: #FEE6E2;
+}
+
+footer{
+    width: 100%;
+   border: solid 20px #b06566 ;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+    display: flex;
+    background-color: #b06566;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+   
+}
+
+
+.horario{
+    text-align: end;
+    background-color: #b06566;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.apps{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 1px 0px 50px;
+}
+.logodetalhes{
+  height: 30px;
+}
+.app{
+  height: 20px;
+  margin-right: 10px;
+  
+}
+.redesocial{
+  margin: 10px 20px 0px 0px;
+}
+.vertudo{
+    
+    color: #b06566;
+    font-family: "Poppins", sans-serif;
+    margin-left: 50px;
+  
+}
+.vertudo:hover{
+     font-size: 16px;
+    color: #240500;
+    
+}
+.voltar{
+  font-size: 16px;
+   font-family: "Poppins", sans-serif;
+   text-decoration: underline;
+   color: #b06566;
+}
+.subcategoria{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 50px 0px 50px;
+}
+.voltar:hover{
+  color: #240500;
+}
+
+/* Imagens pequenas */
+.foto {
+    width: 180px;
+    cursor: pointer;
+    
+}
+
+.foto:hover {
+    border: 2px solid rgb(255, 255, 255);
+}
+
+/* Modal - caixa que aparece por cima */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Imagem grande no modal */
+.foto-grande {
+    max-width: 500px;
+    max-height: 500px;
+    margin: 3% auto;
+    display: block;
+}
+
+/* Legenda no modal */
+.legenda {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Marcador de cor */
+.marcador-cor {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 2px solid white;
+}
+
+/* Botão X para fechar */
+.fechar {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
