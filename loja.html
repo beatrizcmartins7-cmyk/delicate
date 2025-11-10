@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loja.Delicatê</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+ <header>
+    <section class="cabecalho">
+    <form >
+     <input class="pesquisa" type="text" placeholder=" Buscar">
+   </form>
+   <img class="logo" src="imagens/logo delicatê.png">
+   <section class="user-nav" aria-label="acesso-rapido">
+    <ul class="login">
+        <li><a class="link" href="https://api.whatsapp.com/send/?phone=5517992097307&text&type=phone_number&app_absent=0">Entre em contato</a></li>
+    </ul>
+   </section>
+</section>
+<nav class="mainnav" >
+    <ul class="categorias">
+        <li><a class="linknav" href="lojacategorias.html#vertudo">VER TUDO</a></li>
+        <li><a class="linknav" href="lojacategorias.html#vestidos">VESTIDOS</a></li> 
+        <li><a class="linknav" href="lojacategorias.html#calcas">CALÇAS</a></li>
+        <li><a class="linknav" href="lojacategorias.html#saias">SAIAS</a></li>
+        <li><a class="linknav" href="lojacategorias.html#tshirts">T-SHIRT</a></li>
+        <li><a class="linknav" href="lojacategorias.html#shorts">SHORTS</a></li>
+        <li><a class="linknav" href="lojacategorias.html#blusas">BLUSAS</a></li>
+        <li><a class="linknav" href="lojacategorias.html#conjuntos">CONJUNTOS</a></li>
+</ul>
+</nav>
+ </header>
+ <nav>
+  </head>
+    <body>
+   
+     <div class="carrossel" id="carrossel">
+        <div class="container-imagens" id="containerImagens">
+            <div class="imagem">
+              <img src="imagens/banner1.png">
+            </div>
+           
+            <div class="imagem">
+                <img src="imagens/banner2.png">
+            </div>
+           
+            <div class="imagem">
+                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=400&fit=crop" alt="Floresta">
+            </div>
+           
+            <!-- Duplicar imagens para movimento contínuo -->
+            <div class="imagem">
+                <img src="imagens/banner1.png">
+            </div>
+           
+            <div class="imagem">
+                <img src="imagens/banner2.png" alt="Praia">
+            </div>
+           
+            <div class="imagem">
+                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=400&fit=crop" alt="Floresta">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Variáveis
+        let posicaoAtual = 0;
+        const containerImagens = document.getElementById('containerImagens');
+        const imagensOriginais = 4; // número de imagens originais
+        const larguraImagem = 400;
+
+        // Função para movimento contínuo horizontal
+        function moverContinuo() {
+            posicaoAtual += 1; // move pixel por pixel para a esquerda
+           
+            // Se chegou no fim das imagens originais, volta ao início
+            if (posicaoAtual >= imagensOriginais * larguraImagem) {
+                posicaoAtual = 0;
+            }
+           
+            containerImagens.style.transform = `translateX(-${posicaoAtual}px)`;
+        }
+
+        // Inicia movimento contínuo suave
+        window.addEventListener('load', function() {
+            setInterval(moverContinuo, 30); // atualiza a cada 20ms para movimento suave
+        });
+    </script>
+    </body>
+ </nav>
+ <main>
+    <h2>Preferidos & Últimos</h2>
+      <section class="produtos">
+          <article class="card">
+          <img src="imagens/foto60.png" alt="Rosa Marrom Azul
+          M, G, GG " class="foto"
+         onclick="abrirModal(this)">
+          <button>COMPRAR</button>
+        </article>
+        <article class="card">
+          <img src="imagens/foto5.png" alt="Preto Marrom Azul
+           M, G, GG" class="foto"
+         onclick="abrirModal(this)">
+          <button>COMPRAR</button>
+        </article>
+        <article class="card">
+          <img src="imagens/foto20.png" alt="Rosa Verde Azul Laranja
+           P, M, G, GG" class="foto"
+         onclick="abrirModal(this)">
+          <button>COMPRAR</button>
+        </article>
+        <article class="card">
+          <img src="imagens/foto63.png" alt="Preto Marrom
+           M, G, GG" class="foto"
+         onclick="abrirModal(this)">
+        <button>COMPRAR</button>
+        </article>
+        <article class="card">
+          <img src="imagens/foto15.png" alt=" Branco Preto Verde 
+           P, M, G " class="foto"
+         onclick="abrirModal(this)">
+        <button>COMPRAR</button>
+        </article>
+        <article class="card">
+          <img src="imagens/foto9.png" alt=" Marrom Preto
+           M, G, GG " class="foto"
+         onclick="abrirModal(this)">
+          <button>COMPRAR</button>
+        </article>
+        <article class="card">
+          <img src="imagens/foto19.png" alt="Verde Azul Marrom Laranja 
+           M, G, GG " class="foto"
+         onclick="abrirModal(this)">
+          <button>COMPRAR</button>
+        </article>
+      </section>
+      <h2>As Melhores Peças</h2>
+      <section class="produtos">
+        <article class="card">
+          <img src="imagens/foto6.png" alt=" Verde Azul Marrom
+           M, G, GG " class="foto"
+         onclick="abrirModal(this)">
+          <button>COMPRAR</button>
+        </article>
+        <article class="card">
+          <img src="imagens/foto8.png" alt=" Branco Verde Azul Marrom Preto
+           M, G, GG " class="foto"
+         onclick="abrirModal(this)">
+         <button>COMPRAR</button>
+         </article>
+            <article class="card">
+          <img src="imagens/foto13.png" alt=" Rosa Verde Azul Bege
+           M, G, GG   " class="foto"
+         onclick="abrirModal(this)">
+          <button>COMPRAR</button>
+        </article>
+        <article class="card">
+          <img src="imagens/foto14.png" alt=" Animal print -
+           M, G " class="foto"
+         onclick="abrirModal(this)">
+          <button>COMPRAR</button>
+        </article>
+        </article>
+          <article class="card">
+          <img src="imagens/foto16.png" alt=" Azul Rosa 
+           M, G  " class="foto"
+         onclick="abrirModal(this)">
+          <button>COMPRAR</button>
+        </article>
+        <article class="card">
+          <img src="imagens/foto17.png" alt=" Azul marinho Verde Azul Preto
+           M, G, GG " class="foto"
+         onclick="abrirModal(this)">
+          <button>COMPRAR</button>
+        </article>
+        <article class="card">
+          <img src="imagens/foto18.png" alt=" Azul marinho Verde Azul Vermelho
+          M, G, GG " class="foto"
+         onclick="abrirModal(this)">
+          <button>COMPRAR</button>
+        </article>
+        </section>
+        <h2>Novos & Incríveis</h2>
+        <section class="produtos">
+          <article class="card">
+          <img src="imagens/foto2.png" alt=" Rosa Verde Azul Vermelho
+           M, G, GG " class="foto"
+         onclick="abrirModal(this)">
+          <button>COMPRAR</button>
+        </article>
+        <article class="card">
+          <img src="imagens/foto10.png" alt=" Rosa Verde Azul Vermelho
+           M, G, GG " class="foto"
+         onclick="abrirModal(this)">
+          <button>COMPRAR</button>
+        </article>
+         <article class="card">
+          <img src="imagens/foto11.png" alt=" Rosa Verde Azul Vermelho
+           M, G, GG " class="foto"
+         onclick="abrirModal(this)">
+          <button>COMPRAR</button>
+        </article>
+        <article class="card">
+          <img src="imagens/foto12.png" alt=" Rosa Verde Azul Vermelho
+           M, G, GG  " class="foto"
+         onclick="abrirModal(this)">
+        <button>COMPRAR</button>
+        </article>
+      </section >
+      </section>
+    <section class="apps">
+      <section>
+        <img class="logodetalhes" src="imagens/logo delicatê.png" alt="logo">
+      </section>
+      <section class="redesocial">
+        <a href="https://www.instagram.com/delicate_moda_feminina/">
+        <img class="app" src="imagens/Instagram.png" alt="Instagram">
+        </a>
+        <a href="https://api.whatsapp.com/send/?phone=5517992097307&text&type=phone_number&app_absent=0">
+        <img class="app" src="imagens/whats.png" alt="whatsapp">
+        </a>
+      </section>
+    </section>
+ </main>
+<footer>
+    <section>
+     <p> <strong>Endereço</strong></p> 
+     <p> Rua Dom Pedro II, 259 - Centro</p>
+     <p> José Bonifácio – SP</p>
+     <p> <a href="https://api.whatsapp.com/send/?phone=5517992097307&text&type=phone_number&app_absent=0">(17) 99209-7307 </a></p>
+     <p> <a href="#">delicatemodaf@gmail.com</a></p>
+</section>
+<section class="horario">
+    <p><strong>Horário de atendimeno</strong></p>
+    <p> Seg a Sex – 9h às 18h</p>
+    <p>    Sábado – 9h às 12h</p>
+
+</section>
+</footer>
+      <p>© 2025 Delicaté – Todos os direitos reservados.</p>
+<!-- Modal (janela que aparece) -->
+<div id="modal" class="modal" onclick="fecharModal()">
+    <span class="fechar">&times;</span>
+    <img id="fotoModal" class="foto-grande">
+    <div id="legenda" class="legenda"></div>
+ </body> 
+ <script src="script.js"></script> 
+</html>
