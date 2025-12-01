@@ -60,7 +60,7 @@ form{
 }
 
 .mainnav{
-    background: #b06566;
+    background: rgb(176, 101, 102);
 }
 
 
@@ -100,16 +100,26 @@ h2{
 }
 .card{
     background: #b06566;
-  border-radius: 6px;
+  border-radius:3px;
   padding: 10px;
   text-align: center;
   width: 180px;
 }
 .card img {
   max-width: 100%;
-  border-radius: 6px;
+  border-radius:3px;
 }
 
+.card button {
+  margin-top: 10px;
+  background: #ffffff;
+  color: #b06566;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 2px;
+  font-family: Poppins;
+}
 .botao{
    margin-top: 10px;
   background: #ffffff;
@@ -127,7 +137,6 @@ h2{
    background: #dec2bd;
   color: #ffffff;
 }
-
 body{
     background-color: #FEE6E2;
 }
@@ -257,5 +266,4 @@ a{
     top: 10px;
     right: 20px;
     cursor: pointer;
-
 }
